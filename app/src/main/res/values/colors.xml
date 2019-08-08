@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3da769</color>
+    <color name="colorPrimaryDark">#09160e</color>
+    <color name="colorAccent">#3da769</color>
+    <!--<color name="colorPrimary">#6ed699</color>
+    <color name="colorPrimaryDark">#0A2A12</color>
+    <color name="colorAccent">#054820</color>-->
+    <!--<color name="app_theme_dark">#3da76a</color>-->
+    <color name="app_theme_dark">#3da769</color>
+    <color name="app_dark">#054820</color>
+    <color name="white_opasity">#40ffffff</color>
+    <color name="dark_blue">#2E5889</color>
+    <color name="more_light_gray">#ECECEC</color>
+    <color name="HeaderText">#000000</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#FD5739</color>
+    <color name="yellow">#FCC91B</color>
+    <color name="login_btn_bg">#484D57</color>
+
+    <color name="dark_white">#F9FAFC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="off_white">#EEEEEE</color>
+    <color name="black_color">#000000</color>
+    <color name="black_opasity">#6f000000</color>
+    <color name="line">#67d2cfcf</color>
+    <color name="back">#e7e5e5</color>
+    <color name="header_color">#747373</color>
+    <color name="light_gray">#b3b3b3</color>
+    <color name="off_grey">#f7f7f7</color>
+    <color name="blue">#0357ff</color>
+    <color name="sky_blue">#03e2ff</color>
+    <color name="skyy_blue">#FF3DCAC3</color>
+    <color name="red">#C0392B</color>
+    <color name="bg_white">#F2F4F5</color>
+    <color name="light_grey_more">#f1efef</color>
+
+
+    <color name="pending">#f8ac59</color><!--#fcc204-->
+    <color name="confirm">#1ab394</color><!--#6db2f9-->
+    <color name="cancel">#ed5565</color><!--#f43f3f-->
+    <color name="expired">#999</color><!--#dbdbdb-->
+
+    <array name="array_dot_active">
+        <item>@color/black_color</item>
+        <item>@color/black_color</item>
+        <item>@color/black_color</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/light_gray</item>
+        <item>@color/light_gray</item>
+        <item>@color/light_gray</item>
+    </array>
+</resources>

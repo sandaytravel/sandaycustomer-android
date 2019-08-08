@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#f9f9f9"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="0dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvPkgTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/cardSelect"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/med_text_size" />
+
+
+                <com.san.app.font.TextViewAirbnb_bold
+                    android:id="@+id/tvDisplayPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_light
+                    android:id="@+id/tvActualPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvDisplayPrice"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/x_small_text_size" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPkgTitle"
+                    android:layout_toLeftOf="@+id/cardSelect">
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size"
+                    android:visibility="visible" />
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvViewMoreLess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_below="@+id/tvDesc"
+                    android:text="View More"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/small_text_size"
+                    android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/webDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvActualPrice"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/cardSelect"
+                    android:paddingTop="5dp"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardSelect"
+                    android:layout_width="73dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvActualPrice"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    card_view:cardBackgroundColor="#23c6c8"
+                    card_view:cardCornerRadius="12dp"
+                    card_view:cardElevation="0dp">
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_vertical"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/pick"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>

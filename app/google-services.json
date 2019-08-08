@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "632044817837",
+    "firebase_url": "https://san-android.firebaseio.com",
+    "project_id": "san-android",
+    "storage_bucket": "san-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632044817837:android:5f2ec2e1cf6468fb",
+        "android_client_info": {
+          "package_name": "com.san.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632044817837-69cipaifdt9986urln2a2l6b8ivcbmgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.san.app",
+            "certificate_hash": "251b88b95e0e884ed0026db85244c95c57294050"
+          }
+        },
+        {
+          "client_id": "632044817837-9582tuj6nbbqbqsvfgse4a0sg0jeiucl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5vPUbdT6GeR1klwr0Z45fQt-zVf4ycEM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632044817837-9582tuj6nbbqbqsvfgse4a0sg0jeiucl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

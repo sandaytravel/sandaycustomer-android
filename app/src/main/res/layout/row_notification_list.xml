@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/med_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India"
+            android:layout_below="@+id/tvTitle"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDesc"
+            android:layout_marginTop="7dp"
+            android:text="dsfsdfsds"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/x_small_text_size" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvTime"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray" />
+
+    </RelativeLayout>
+</layout>

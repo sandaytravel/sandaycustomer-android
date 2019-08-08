@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="30dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="36dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+           <com.san.app.font.TextViewAirbnb_medium
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="-36dp"
+            android:background="@color/app_theme_dark"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:elevation="5dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="5dp"
+            card_view:cardPreventCornerOverlap="false">>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvTransactionNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/cardImage"
+                    android:maxLines="2"
+                    android:text="@string/order_no"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvTransactionNoValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@+id/lnPaymentStatus"
+                    android:layout_toRightOf="@+id/tvTransactionNo"
+                    android:singleLine="true"
+                    android:text="123343333"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/lnPaymentStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgStatus"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="4dp"
+                        android:src="@mipmap/circle_view_img" />
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvPaymentStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Pending Payment"
+                        android:textColor="@color/app_theme_dark"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvBookingDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTransactionNo"
+                    android:layout_marginTop="4dp"
+                    android:maxLines="2"
+                    android:text="@string/booking_date"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvBookingDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTransactionNo"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@+id/tvTotalAmount"
+                    android:layout_toRightOf="@+id/tvBookingDate"
+                    android:singleLine="true"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvTotalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnPaymentStatus"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@+id/tvTotalAmountValue"
+                    android:maxLines="2"
+                    android:text="@string/paid_amount"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/small_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvTotalAmountValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/lnPaymentStatus"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:text="123343333"
+                    android:textColor="@color/app_theme_dark"
+                    android:textSize="@dimen/small_text_size" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardProceedtopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvTotalAmount"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="4dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="0dp"
+                    card_view:cardBackgroundColor="@color/app_theme_dark"
+                    card_view:cardCornerRadius="14dp"
+                    card_view:cardElevation="0dp"
+                    card_view:cardPreventCornerOverlap="false">>
+
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvProceedPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:singleLine="true"
+                        android:text="Proceed to pay"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvBookingInnerList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/cardProceedtopay"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</layout>

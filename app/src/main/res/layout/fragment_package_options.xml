@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_white"
+            android:elevation="5dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back_view"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_white1"
+                    android:tint="@color/black_color"
+                    android:visibility="visible" />
+
+                <com.san.app.font.TextViewAirbnb_bold
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="55dp"
+                    android:text="@string/package_options"
+                    android:textColor="@color/app_theme_dark"
+                    android:textSize="18dp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/lnPackageOptionMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@color/app_theme_dark"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Package Options"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/med_text_size"
+                    android:visibility="gone" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPackageOptionsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</layout>

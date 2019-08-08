@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/lnTopMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_white"
+            android:elevation="5dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back_view"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_white1"
+                    android:tint="@color/black_color"
+                    android:visibility="visible" />
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="55dp"
+                    android:text="@string/shopping_cart"
+                    android:textColor="@color/app_theme_dark"
+                    android:textSize="18dp" />
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvTitleTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/shopping_cart"
+                    android:textColor="@color/app_theme_dark"
+                    android:textSize="18dp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/lnMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="52dp"
+                android:visibility="visible">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/nestedMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCartList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layoutAnimation="@anim/layout_animation_fall_down"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnBottomPay"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="-52dp"
+                android:background="@color/bg_white"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtotal"
+                        android:textColor="@color/black_color" />
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="RM 0"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:gravity="end">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardPayNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"
+                        android:elevation="0dp"
+                        card_view:cardBackgroundColor="@color/gray"
+                        card_view:cardCornerRadius="7dp"
+                        card_view:cardElevation="0dp">
+
+                        <com.san.app.font.TextViewAirbnb_medium
+                            android:id="@+id/tvPayNow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/proceed_to_pay"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/med_text_size" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/empty_cart" />
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvNoItemFound"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingTop="120dp"
+                    android:text="@string/your_shopping_cart_is_empty"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/large_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnGuestView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/empty_cart" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="200dp"
+                        android:text="@string/shopping_cart"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/large_text_size" />
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:id="@+id/txt_signin"
+                        android:layout_width="140dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/round_full_background_app_theme"
+                        android:gravity="center"
+                        android:text="@string/log_in1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/med_text_size" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

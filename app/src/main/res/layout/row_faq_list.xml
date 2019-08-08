@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/bg_white"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_color"
+            android:padding="5dp"
+            android:layout_toLeftOf="@+id/imgUpDown"
+            android:duplicateParentState="true"
+            android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgUpDown"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:tag="down"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/ic_down_arrow_img"/>
+
+
+        </RelativeLayout>
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:duplicateParentState="true"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_text_size" />
+
+
+    </LinearLayout>
+</layout>

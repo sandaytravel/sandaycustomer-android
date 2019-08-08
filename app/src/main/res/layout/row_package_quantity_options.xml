@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="dsfsfsf"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/med_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvDisplayPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Rm 9900"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/x_small_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgMinus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/left_minus_img" />
+
+
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:id="@+id/tvCount"
+                        android:layout_width="43dp"
+                        android:layout_height="28dp"
+                        android:gravity="center"
+                        android:maxLength="4"
+                        android:background="@drawable/round_full_background_white"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:text="0"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/med_text_size" />
+
+
+                <ImageView
+                    android:id="@+id/imgPlus"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/right_plus_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvCountPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/med_text_size" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

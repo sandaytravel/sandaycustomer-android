@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/app_dark"
+                android:visibility="gone"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp"
+                app:titleTextColor="@android:color/white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_back_view"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="17dp"
+                        android:adjustViewBounds="true"
+                        android:src="@mipmap/back_arrow"
+                        android:visibility="gone" />
+
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="HOME"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <com.san.app.font.TextViewAirbnb_book
+                            android:id="@+id/tvRightTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="7dp"
+                            android:text="Search"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgRightView"
+                            android:layout_width="20dp"
+                            android:layout_height="23dp"
+                            android:layout_marginRight="14dp"
+                            android:src="@mipmap/search_white_img"
+                            android:visibility="gone" />
+
+                        <!-- <ImageView
+                             android:id="@+id/imgCartCount"
+                             android:layout_width="24dp"
+                             android:layout_height="24dp"
+                             android:layout_marginEnd="8dp"
+                             android:layout_marginStart="8dp"
+                             android:src="@mipmap/cart1" />-->
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+        </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/more_menu_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            app:elevation="16dp"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/custom_navigation_selector"
+            app:itemTextColor="@drawable/custom_navigation_selector"
+            app:menu="@menu/more_bottom_navigation_main" />
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_back_view"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_white1"
+                    android:tint="#8e8e8e"
+                    android:visibility="visible" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toLeftOf="@+id/imgright"
+                    android:layout_toRightOf="@+id/img_back_view"
+                    android:elevation="5dp"
+                    app:cardElevation="0dp"
+                    card_view:cardBackgroundColor="#eaeaea"
+                    card_view:cardCornerRadius="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/search_white_img"
+                            android:tint="#8e8e8e" />
+
+                        <com.san.app.font.TextViewAirbnb_book
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="4dp"
+                            android:textColor="#8e8e8e"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/imgright"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@mipmap/cart_white"
+                    android:tint="#8e8e8e" />
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp">
+
+                    <TextView
+                        android:id="@+id/cart_badge"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="top|center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/circle"
+                        android:backgroundTint="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/lnCateDownUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/subcat_search_img"
+            android:orientation="horizontal">
+
+
+            <com.san.app.font.TextViewAirbnb_medium
+                android:id="@+id/tvCategoryHdr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="60dp"
+                android:gravity="center_vertical"
+                android:text="Tours Travels"
+                android:textColor="@color/app_theme_dark"
+                android:textSize="@dimen/small_text_size" />
+
+            <ImageView
+                android:id="@+id/imgUpDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="-60dp"
+                android:src="@drawable/ic_down_grey"
+                android:tag="down" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnSubPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvSubCateogryList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="none" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnNoFilterData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:gravity="center"
+                        android:text="@string/no_activity_found" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvPopularActList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scrollbars="none"
+                    android:nestedScrollingEnabled="false"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom|center"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnCatePopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp"
+                android:orientation="vertical"
+                android:padding="7dp"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="7dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0.0px"
+                    android:elevation="2dp"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="2dp"
+                    card_view:cardPreventCornerOverlap="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.san.app.font.TextViewAirbnb_medium
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/things_to_do"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/black_color"
+                            android:textSize="@dimen/med_text_size" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCategoryPartList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

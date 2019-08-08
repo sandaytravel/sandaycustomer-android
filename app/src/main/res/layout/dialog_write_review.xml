@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:elevation="0dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="0dp"
+            card_view:cardPreventCornerOverlap="false">>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="7dp"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:elevation="0dp"
+                    card_view:cardBackgroundColor="@color/off_grey"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="0dp"
+                    card_view:cardPreventCornerOverlap="false">>
+
+                    <com.san.app.font.EditTextAirbnb_book
+                        android:id="@+id/edtReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="@string/enter_review"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/med_text_size" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvImageList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="vertical" />
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardSubmit"
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:elevation="0dp"
+                    card_view:cardBackgroundColor="@color/app_theme_dark"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="0dp">
+
+                    <com.san.app.font.TextViewAirbnb_light
+                        android:id="@+id/tvSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:src="@mipmap/cancel_red_img"
+            android:visibility="visible" />
+
+    </FrameLayout>
+</layout>

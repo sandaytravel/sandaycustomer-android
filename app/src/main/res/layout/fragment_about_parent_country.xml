@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C4000000"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:textSize="@dimen/large_text_size"
+                    android:textColor="@color/white"/>
+
+                <com.san.app.font.TextViewAirbnb_bold
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bankkok"
+                    android:textSize="@dimen/x_large_text_size"
+                    android:textColor="@color/white"/>
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do not miss"
+                    android:layout_marginTop="1200dp"
+                    android:textSize="@dimen/med_text_size"
+                    android:textColor="@color/white"/>
+
+                <com.san.app.font.TextViewAirbnb_bold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nearby Destinations"
+                    android:textSize="@dimen/x_large_text_size"
+                    android:textColor="@color/white"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvNearbyDestList"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:layout_marginRight="-5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

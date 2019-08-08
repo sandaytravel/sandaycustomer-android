@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            card_view:cardBackgroundColor="@color/bg_white"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="155dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/app_theme_dark"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Peak Tram Fast-Track Combo"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_text_size" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/lnReview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/ic_rating_img"
+                                    android:tint="@color/yellow" />
+
+                                <com.san.app.font.TextViewAirbnb_book
+                                    android:id="@+id/tvAvgReview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:text="4.5"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/small_text_size" />
+
+                                <com.san.app.font.TextViewAirbnb_light
+                                    android:id="@+id/tvTotalReview"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:maxLines="1"
+                                    android:gravity="bottom"
+                                    android:text="(20k reviews)"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/x_small_text_size" />
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <com.san.app.font.TextViewAirbnb_book
+                                    android:id="@+id/tvTotalBooked"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="999k+ Booked"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/x_small_text_size" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="end"
+                                    android:layout_gravity="end">
+
+                                    <com.san.app.font.TextViewAirbnb_light
+                                        android:id="@+id/tvActualPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$ 647 "
+                                        android:layout_marginRight="5dp"
+                                        android:textColor="@color/black_color"
+                                        android:textSize="@dimen/x_small_text_size" />
+
+
+                                    <com.san.app.font.TextViewAirbnb_bold
+                                        android:id="@+id/tvDisplayPrice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$ 647 "
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/small_text_size" />
+
+                                </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</layout>

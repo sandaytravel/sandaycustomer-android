@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp">
+
+                        <ImageView
+                            android:id="@+id/imgHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#50000000" />
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="top"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:elevation="5dp"
+                            android:visibility="gone"
+                            card_view:cardBackgroundColor="@color/white"
+                            card_view:cardCornerRadius="14dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:tint="@color/black_color"
+                                    android:src="@mipmap/search_white_img"/>
+
+                                <com.san.app.font.TextViewAirbnb_book
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Search"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/x_small_text_size"
+                                    android:textColor="@color/black_color"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <com.san.app.font.TextViewAirbnb_bold
+                                android:id="@+id/tvTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/large_text_size" />
+
+                            <com.san.app.font.TextViewAirbnb_book
+                                android:id="@+id/tvDesc"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:maxLines="2"
+                                android:textSize="@dimen/small_text_size"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnPopularDest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <com.san.app.font.TextViewAirbnb_medium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/popular_destinations"
+                                android:textColor="@color/app_theme_dark"
+                                android:textSize="@dimen/large_text_size1" />
+
+                            <com.san.app.font.TextViewAirbnb_book
+                                android:id="@+id/tvShowAllDest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/view_all"
+                                android:textColor="@color/black_color" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvPopularDestList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="5dp"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lnPopularAct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+                            <com.san.app.font.TextViewAirbnb_medium
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/popular_activities"
+                                android:textColor="@color/app_theme_dark"
+                                android:textSize="@dimen/large_text_size1" />
+
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvPopularActList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-8dp"
+                            android:layout_marginRight="-8dp"
+                            android:layout_marginTop="5dp"
+                            android:layoutAnimation="@anim/layout_animation_fall_down"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="none" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/lnSearchView"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_margin="7dp"
+                android:layout_gravity="end|top"
+                android:background="@mipmap/white_shadow_circle"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgSearchCity"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:tint="@color/app_theme_dark"
+                    android:src="@mipmap/search_white_img" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</layout>

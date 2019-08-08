@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.san.app.font.EditTextAirbnb_light
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="22dp"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:hint="@string/search_destinations"
+                    android:textSize="@dimen/med_text_size" />
+
+                <ImageView
+                    android:id="@+id/imgCancelSearch"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-22dp"
+                    android:src="@mipmap/cancel_toast_new" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPopularDestList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/lnNoFilterData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <com.san.app.font.TextViewAirbnb_book
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_margin="15dp"
+               android:gravity="center"
+               android:text="@string/no_results_found_we_re_currently_working_on_making_activities_in_more_destination_available_soon"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

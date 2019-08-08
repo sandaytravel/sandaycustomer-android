@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_explore"
+        android:enabled="true"
+        android:icon="@mipmap/explore_inactive"
+        android:title="@string/explore"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_destination"
+        android:enabled="true"
+        android:icon="@mipmap/destination_inactive"
+        android:title="@string/destination"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cart"
+        android:enabled="true"
+        android:icon="@mipmap/cart_inactive"
+        android:title="@string/cart"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_booking"
+        android:enabled="true"
+        android:icon="@mipmap/booking_inactive"
+        android:title="@string/booking"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        android:icon="@mipmap/account_inactive"
+        android:title="@string/account"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/lnMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/img_back_view"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="17dp"
+                    android:adjustViewBounds="true"
+                    android:src="@mipmap/back_white"
+                    android:tint="@color/black_color"
+                    android:visibility="visible" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Order Confirm"
+                    android:textColor="@color/black_color"
+                    android:textSize="18dp" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:gravity="center"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/x_large_text_size"
+            android:layout_width="match_parent"
+            android:layout_margin="25dp"
+            android:layout_height="match_parent"
+            android:text="Thank you for purchase item with us."/>
+
+
+    </LinearLayout>
+</layout>

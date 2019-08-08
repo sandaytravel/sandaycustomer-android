@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_white"
+            android:elevation="5dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@android:color/white"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back_view"
+                    android:layout_width="40dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_white1"
+                    android:tint="@color/black_color"
+                    android:visibility="visible" />
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="55dp"
+                    android:text="Review"
+                    android:textColor="@color/app_theme_dark"
+                    android:textSize="18dp" />
+
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvRightTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:text="Submit"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/large_text_size" />
+
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_white"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="15dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgActivity"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop" />
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:id="@+id/tvActivityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_toRightOf="@+id/imgActivity"
+                        android:maxLines="2"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/med_text_size" />
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:id="@+id/tvParticipateDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvActivityName"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imgActivity"
+                        android:maxLines="2"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/small_text_size" />
+
+                </RelativeLayout>
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="Activity Rating"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/small_text_size" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:scaleX=".8"
+                        android:scaleY=".8"
+                        android:stepSize="1"
+                        android:theme="@style/RatingBar" />
+
+                    <com.san.app.font.TextViewAirbnb_book
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="Tap a star to rate"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+
+                <com.san.app.font.TextViewAirbnb_medium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:paddingLeft="10dp"
+                    android:text="Activity Review"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/small_text_size" />
+
+
+                <com.san.app.font.EditTextAirbnb_book
+                    android:id="@+id/edtReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="Enter review"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/med_text_size" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <com.san.app.font.TextViewAirbnb_medium
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:paddingLeft="10dp"
+                        android:text="Upload Photos(Optional)"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <LinearLayout
+                        android:id="@+id/lnCamera"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="-50dp"
+                        android:background="@drawable/circle_full_app_dark"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgAddPhoto"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/camera_blue" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/white"
+                    android:minHeight="150dp"
+                    android:visibility="visible">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvImageList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:scrollbars="vertical" />
+
+
+                    <ImageView
+                        android:id="@+id/imgSelected"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/imgCancel"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@mipmap/cancel_grey"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

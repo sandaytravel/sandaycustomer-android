@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:id="@+id/tvActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Private Car Charter in Ahmedabad"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/med_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvPackageSelectedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:text="Private Car Charter in Ahmedabad"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:text="31 Jan 2019"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_book
+            android:id="@+id/tvSelectedGenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Adult -2 Child -2"
+            android:textSize="@dimen/x_small_text_size" />
+
+        <com.san.app.font.TextViewAirbnb_medium
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="2"
+            android:textColor="@color/black_color"
+            android:textSize="@dimen/med_text_size" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+            <com.san.app.font.TextViewAirbnb_book
+                android:id="@+id/tvSUbName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_full_background_grey_light_more"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/small_text_size" />
+
+
+        <com.github.tommykw.tagview.TagView
+            android:id="@+id/tagSubCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            app:background_color="@color/white"
+            app:corner_radius="15dp"
+            app:horizontal_spacing="8dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:sort_type="none"
+            app:stroke_color="@color/black_color"
+            app:stroke_width="1dp"
+            app:text_color="@color/black_color"
+            app:text_font_size="4sp" />
+
+
+    </LinearLayout>
+</layout>

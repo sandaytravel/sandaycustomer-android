@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/lnFilterData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <!--<ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/destination_inactive" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvCityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/med_text_size" />
+
+                <com.san.app.font.TextViewAirbnb_book
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/small_text_size" />
+
+            </LinearLayout>-->
+
+            <com.san.app.font.TextViewAirbnb_book
+                android:id="@+id/tvCityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_full_background_black_border"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/small_text_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

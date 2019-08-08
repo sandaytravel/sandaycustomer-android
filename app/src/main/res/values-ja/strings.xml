@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sanday</string>
+    <string name="next" translatable="false">次へ</string>
+    <string name="skip" translatable="false">Skip</string>
+    <string name="done" >Done</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email" translatable="false">メールアドレス</string>
+    <string name="password" translatable="false">パスワード</string>
+    <string name="login" translatable="false">ログイン</string>
+    <string name="signup" translatable="false">会員登録</string>
+    <string name="forgot_password" translatable="false"><u>パスワードを忘れた方</u></string>
+    <string name="name" translatable="false">ID</string>
+    <string name="confirm_password" translatable="false">パスワードを認証する</string>
+    <string name="please_provide_old_pwd" translatable="false">古いパスワード</string>
+    <string name="please_provide_new_pwd" translatable="false">新しいパスワードの作成</string>
+    <string name="please_provide_confirm_new_pwd" translatable="false">新しいパスワードの再入力</string>
+    <string name="both_pwd_doest_not_match" translatable="false">新しいパスワードと新しいパスワード（再入力）が一致していません。</string>
+    <string name="please_provide_email" translatable="false">メールアドレスを入力してください</string>
+    <string name="please_provide_birthday" translatable="false">誕生日を入力してください。</string>
+    <string name="error" translatable="false">エラー</string>
+    <string name="please_provide_valid_email" translatable="false">メールアドレスが正しい形式でされていません</string>
+    <string name="please_provide_password" translatable="false">パスワードを入力して下さい</string>
+    <string name="repeat_password" translatable="false">パスワードの再入力して下さい</string>
+    <string name="please_provide_name" translatable="false">お名前</string>
+    <string name="please_provide_repeat_password" translatable="false">パスワードを入力して下さい</string>
+    <string name="both_password_not_match" translatable="false">パスワードが一致していません</string>
+    <string name="please_accept_terms_condition" translatable="false">規約に同意する　</string>
+    <string name="NO_INTERNET_CONNECTION" translatable="false">インターネットの接続がありません</string>
+    <string name="it_s_everything_you_ll_ever_need">It\'s everything you\'ll ever need!</string>
+    <string name="explore" translatable="false">Explore</string>
+    <string name="destination" translatable="false">Destination</string>
+    <string name="cart" translatable="false">かご</string>
+    <string name="booking" translatable="false">Booking</string>
+    <string name="account" translatable="false">マイページ</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="please_provide_title" translatable="false">敬称</string>
+    <string name="please_provide_family_name" translatable="false">姓</string>
+    <string name="please_provide_first_name" translatable="false">名</string>
+    <string name="please_provide_phone_number" translatable="false">携帯電話</string>
+    <string name="please_provide_country_name" translatable="false">国名</string>
+    <string name="please_provide_country_code" translatable="false">国番号</string>
+    <string name="please_provide_valid_phone_number" translatable="false">有効な携帯番号を入力してください</string>
+    <string name="please_select_a_participation_date" translatable="false">ご希望の日付を選択してください</string>
+    <string name="currency_rm" translatable="false">RM</string>
+    <string name="select_language">言語</string>
+    <string name="login_signup">ログイン/新規会員登録</string>
+    <string name="wishlist">お気に入り</string>
+    <string name="language">言語</string>
+    <string name="notifications">お知らせ</string>
+    <string name="change_password">パスワードの変更</string>
+    <string name="help">ヘルプ　</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">ログアウト</string>
+    <string name="do_you_really_want_to_logout">ログアウトしますか</string>
+    <string name="cancel">キャンセル</string>
+    <string name="yes">はい</string>
+    <string name="login_cap">ログイン</string>
+    <string name="or">Or</string>
+    <string name="login_with_facebook">Facebookでログイン</string>
+    <string name="need_an_account">新規会員登録</string>
+    <string name="sign_up">会員登録</string>
+    <string name="birthday">お誕生日</string>
+    <string name="sign_up1">Sign Up</string>
+    <string name="already_onboard">アカウントをお持ちですか?</string>
+    <string name="forgot_password1">パスワードをお忘れの方</string>
+    <string name="submit">送信する</string>
+    <string name="all_tours_in_your_hand">All Tours In Your Hand</string>
+    <string name="search_country_name">国名を検索する</string>
+    <string name="no_results_found">検索結果が見つかりません</string>
+    <string name="enter_review">クチコミを書く</string>
+    <string name="search_destinations">目的地を探す</string>
+    <string name="no_results_found_we_re_currently_working_on_making_activities_in_more_destination_available_soon">結果は見つかりませんでした。 現在,より多くの目的地のアクティビティを近日中に提供できるよう取り組んでいます。</string>
+    <string name="reviews">レビュー , クチコミ</string>
+    <string name="order_summary">オーダー要約</string>
+    <string name="qty">Qty</string>
+    <string name="amount">Amount</string>
+    <string name="actual_payment">合計金額</string>
+    <string name="merchant_note">Merchant Note</string>
+    <string name="rate_activity">Rate Activity</string>
+    <string name="view_voucher">e-チケット一覧</string>
+    <string name="booking_options">オプション</string>
+    <string name="edit">変更する</string>
+    <string name="select_date">日付を設定してください</string>
+    <string name="package_quantity">人数</string>
+    <string name="total">合計</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="book_now">Book Now</string>
+    <string name="shopping_cart">買い物かご</string>
+    <string name="subtotal">総計</string>
+    <string name="proceed_to_pay">次へすすむ</string>
+    <string name="no_activity_found">検索結果が見つかりません</string>
+    <string name="things_to_do">Things to Do</string>
+    <string name="old_password">古いパスワード</string>
+    <string name="new_password">新しいパスワード</string>
+    <string name="confirm_pwd">新しいパスワード（再入力）</string>
+    <string name="destinations">目的地</string>
+    <string name="popular_destinations">人気の目的地</string>
+    <string name="view_all">全て見る</string>
+    <string name="read_all_reviews">クチコミをもっと見る</string>
+    <string name="package_options">プランオプション</string>
+    <string name="what_to_expect">What To Expect</string>
+    <string name="activity_information">詳細情報</string>
+    <string name="how_to_use">ご利用ガイド</string>
+    <string name="cancelation_policy">キャンセルポリシー</string>
+    <string name="faqs">よくあるご質問</string>
+    <string name="popular_activities">人気のアクティビティ</string>
+    <string name="pay">お支払い</string>
+    <string name="traveler_s_information">旅行者情報</string>
+    <string name="title">敬称</string>
+    <string name="family_name_as_on_travel_document">姓（パスポートのお名前綴り）</string>
+    <string name="first_name_as_on_travel_document">名（パスポートのお名前綴り）</string>
+    <string name="country_region_of_travel_document">國籍</string>
+    <string name="country_code">国番号</string>
+    <string name="phone_number">電話番号</string>
+    <string name="email_to_receive_voucher">メールアドレス (旅行者）</string>
+    <string name="payment_summary">お支払い情報</string>
+    <string name="payment_options">お支払い方法</string>
+    <string name="paypal">PayPal</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="save">Save</string>
+    <string name="my_profile">マイページ</string>
+    <string name="view_less">一部のみ表示</string>
+    <string name="view_more">すべて表示する</string>
+    <string name="my_booking">予約の確認</string>
+    <string name="log_in1">ログイン</string>
+    <string name="birthday1">誕生日</string>
+    <string name="ok">OK</string>
+    <string name="close">閉じる</string>
+    <string name="paid_amount">お支払金額合計 </string>
+    <string name="pending">確認待ち</string>
+    <string name="confirmed">予約を確定する</string>
+    <string name="expired">期限切れ</string>
+    <string name="canceled">キャンセルされました</string>
+    <string name="your_shopping_cart_is_empty">現在、買い物かごには商品が入っていません。</string>
+    <string name="select_title">敬称</string>
+    <string name="payment_successful">決済完了</string>
+    <string name="choose_option">オプション</string>
+    <string name="camera">カメラ</string>
+    <string name="gallery">写真</string>
+    <string name="are_you_sure_delete_activity">削除しますか?</string>
+    <string name="no_notification_found">現在、新しい情報はありません。</string>
+    <string name="recently_added">最近追加された商品</string>
+    <string name="search_city_or_attraction">都市・アトラクションを検索</string>
+    <string name="suggestions">オススメ</string>
+    <string name="simply_browse_and_tap_on_the_heart_icon">Simply browse and tap on the heart icon.</string>
+    <string name="no_items_found">検索結果が見つかりません</string>
+    <string name="booking_ref_id">予約番号 </string>
+    <string name="pending_payment">支払い待ち中</string>
+    <string name="book_date">Book Date: </string>
+    <string name="write_review">レビューを書く</string>
+    <string name="order_no">注文番号: </string>
+    <string name="pick">Pick</string>
+    <string name="are_you_sure_you_want_cancel_process">この予約をキャンセルします。よろしいですか？</string>
+    <string name="no_booking_yet">予約なし...まだ！</string>
+    <string name="booking_date">予約日： </string>
+    <string name="paid_status">有料</string>
+    <string name="search_activities_in">のアクティビティを検索 </string>
+    <string name="order_placed">注文済み</string>
+    <string name="you_can_select_max_5_images">最大5枚まで選択できます。</string>
+    <string name="please_provide_rating">評価を入力してください</string>
+    <string name="please_provide_review">レビューを入力してください</string>
+    <string name="you_can_add_max_item">この商品には</string>
+    <string name="you_can_add_min_item">最低限追加する必要があります</string>
+    <string name="qunatity_for_item"> 個まで追加することができます。</string>
+    <string name="qunatity_for_this_pkg"> の数量</string>
+    <string name="cart_validation_error">カートの中のいくつかの商品は無効ですので、購入商品のためにこれを修正してください！</string>
+    <string name="dialog_msg_remove_order_confirmation">あなたの現在の注文では、いくつかの活動は日付で利用できないか、または販売者によって無効にされるかもしれません。無効なアイテムを削除してもよろしいですか？</string>
+    <string name="remove_order">注文を削除</string>
+    <string name="selected_package_might_be_not_availalbe_longer_so_please_pick_another_one">選択されたパッケージはもう利用できないかもしれません。別のものを選んでください。</string>
+    <string name="please_check_min_qauntity">Please check minimum quantity.</string>
+</resources>

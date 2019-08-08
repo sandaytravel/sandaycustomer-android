@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/svMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="340dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/get_started_bg" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="50dp"
+                            android:orientation="vertical">
+
+                            <com.san.app.font.TextViewAirbnb_bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="Hi Stella"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/x_large_text_size" />
+
+                            <com.san.app.font.TextViewAirbnb_book
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:text="Discover and book amazing things to do at exclusive prices"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.san.app.font.TextViewAirbnb_bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Popular Destinations"
+                                android:textColor="@color/black_color"
+                                android:textSize="@dimen/large_text_size" />
+
+                            <com.san.app.font.TextViewAirbnb_book
+                                android:id="@+id/tvShowAllDest"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="Show All"
+                                android:textColor="@color/black_opasity" />
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvPopularDestList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="5dp"
+                            android:scrollbars="vertical" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <com.san.app.font.TextViewAirbnb_bold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Popular Activities"
+                                android:textColor="@color/black_color"
+                                android:textSize="@dimen/large_text_size" />
+
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvPopularActList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-5dp"
+                            android:layout_marginRight="-5dp"
+                            android:layout_marginTop="5dp"
+                            android:scrollbars="vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/imgSearchCity"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_margin="15dp"
+                android:src="@mipmap/search_white_img" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>
